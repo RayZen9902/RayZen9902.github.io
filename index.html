@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo San Valentin</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>">
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+
+    <!-- Botón flotante siempre visible -->
+    <button id="toggleDarkMode" class="floating-button">
+        <i class="ri-moon-line"></i>
+    </button>
+
+    <!-- Inicio -->
+    <section class="section active" id="inicio">
+        <h1>Carta para mi pancito Naomi 💜</h1>
+        <p>Cada día contigo es como vivir una aventura en un mundo de fantasía.</p>
+        <button class="btn" onclick="showSection('declaracion')">Siguiente</button>
+    </section>
+
+    <!-- Declaración -->
+    <section class="section" id="declaracion">
+        <h1>Mi vida, ¿te gustaría ser mi San Valentín? 💜</h1>
+        <div class="button-container">
+            <button class="btn" onclick="showSection('aceptacion')">¡Sí! 💖</button>
+            <button class="btn" id="btnNo">No 😢</button>
+        </div>
+    </section>
+
+    <!-- Carta -->
+    <section class="section" id="aceptacion">
+        <h1>¡Voy a suponer que ni se te pasó por la cabeza decir que no! 👁️</h1>
+        <div class="carta">
+            <h1>Feliz San Valentín, mi vida ❤️</h1>
+            <p>
+                Mi amor Naomi,<br><br>
+                Aunque no podamos abrazarnos ni estar físicamente juntos, cada momento que compartimos significa mucho para mí. Ya sea cuando vemos algo juntos, jugamos o simplemente hablamos de cualquier tontería, cada segundo contigo me llena de alegría y hace que mi día tenga sentido ✨.<br><br>
+
+                Tenerte en mi vida me inspira a ser mejor y a valorar cada risa, cada mensaje y cada mirada en la pantalla. Te amo más de lo que puedo expresar con palabras 💙, y aunque no pueda abrazarte en persona, siento tu cercanía en cada conversación y en cada instante que compartimos.<br><br>
+
+                Gracias por estar a mi lado, incluso a la distancia 🧡. Espero que este San Valentín sea solo uno de muchos que celebraremos, llenos de momentos simples pero significativos, y que podamos seguir construyendo nuestro amor cada día, aunque sea a través de una pantalla. Te adoro con todo mi corazón ❤️‍🩹<br><br>
+
+                Con todo mi amor,<br>
+                Jemi 💜
+            </p>
+        </div>
+
+        <button class="btn" onclick="showSection('razones')" style="margin-top:2rem;">
+            💜 Saber razones por las que te amo
+        </button>
+    </section>
+
+    <!-- Razones -->
+    <section class="section" id="razones">
+        <h1>Razones por las que te amo 💜</h1>
+
+        <div class="razones-container">
+            <div class="razon-card">💙 Amo tu ternura y forma de ser.</div>
+            <div class="razon-card">🌟 Amo tu risa. </div>
+            <div class="razon-card">❤️‍🔥 Amo tu carita preociosa .</div>
+            <div class="razon-card">💫 Amo cómo me haces tan amado.</div>
+            <div class="razon-card">✨ Amo cada detallito que siempre has tenido conmigo.</div>
+            <div class="razon-card">🌿 Amo hasta tus dramitas regulares.</div>
+        </div>
+
+        <div class="button-container" style="margin-top:2rem;">
+            <button class="btn" onclick="showSection('inicio')">
+                Volver al inicio 💫
+            </button>
+            <button class="btn" onclick="showSection('dedicatoria')">
+                🎬 Ver dedicatoria especial
+            </button>
+        </div>
+    </section>
+
+    <!-- Dedicatoria con video -->
+    <section class="section" id="dedicatoria">
+        <h1>🎥 Dedicatoria Especial para ti 💜</h1>
+        <p>Así me siento desde que te conocí y empezamos nuestra historia</p>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/gW3OZC1NDTk" 
+                    title="Video dedicatorio" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+        </div>
+
+        <button class="btn" style="margin-top:2rem;" onclick="showSection('inicio')">
+            💫 Volver al inicio
+        </button>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
